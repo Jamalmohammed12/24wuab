@@ -12,8 +12,9 @@ body {
     height: 150px;
     margin-right: 20px;
 }
+
 ul:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 a {
@@ -21,11 +22,14 @@ a {
     color: black;
 }
 
-@media screen and (max-width:768px) {
 
+
+@media screen and (max-width:768px) {
+    /* kod för mobil */
+/* wrapper sida 1 */
     #wrappermain {
         width: 100vw;
-        height: 120vh;
+        height: 200vh;
         display: grid;
         grid-template-areas:
             "hd"
@@ -33,6 +37,18 @@ a {
             "ft";
         grid-template-rows: 1fr 2fr 1fr;
     }
+/* wraper sida 3 */
+    #wrapperrecept {
+        width: 100vw;
+        height: 150vh;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas:
+            "hd"
+            "st3"
+            "ft";
+    }
+
 
 
 
@@ -40,23 +56,24 @@ a {
         grid-area: hd;
         display: flex;
         justify-content: space-between;
-        background-color: deeppink;
-
+        background-color: black;
     }
 
     section {
         grid-area: st;
-        background-color: black;
+        background-color: rgb(74, 123, 139);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 3px;
     }
 
-    article {
-        grid-area: at;
-        background-color: blueviolet;
-    }
+
 
     footer {
         grid-area: ft;
-        background-color: chartreuse;
+        background-color: rgb(2, 2, 43);
     }
 
     nav {
@@ -64,15 +81,246 @@ a {
         background-color: lightgreen;
     }
 
-    .loggo {
-        grid-area: lg;
+    footer h2,
+    p {
+        color: white;
+    }
+
+
+    .nav2 {
+        display: none;
+    }
+
+    .block1 {
+        height: 40vh;
+        width: 60vw;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px #333333;
+
+    }
+
+    .block1:hover {
+        box-shadow: 10px 10px 10px 10px #333333;
+    }
+
+    #bild1 {
+        background-image: url(../img/Gryta_1.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: fill;
+        height: 30vh;
+        width: 60vw;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+
+
+    .textbild {
+        height: 10vh;
+        width: 60vw;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        background-color: white;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    #bild2 {
+        background-image: url(../img/Pasta_carbonara.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 30vh;
+        width: 60vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    #bild3 {
+        background-image: url(../img/Kyckling_sallad.jpg);
+        background-size: cover;
+        background-position: left 60%;
+        height: 30vh;
+        width: 60vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    #bild4 {
+        background-image: url(../img/Kycklingfile_med_mos.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 30vh;
+        width: 60vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    #bild5 {
+        background-image: url(../img/Ris_med_räckor.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 30vh;
+        width: 60vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    #bild6 {
+        background-image: url(../img/Tacos.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 30vh;
+        width: 60vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    .lager {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(74, 123, 139);
+        gap: 20px;
+        margin: 5px;
+    }
+
+
+    .lager2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(74, 123, 139);
+        gap: 20px;
+        margin: 5px;
+    }
+
+    .text h1,
+    h3 {
+        color: black;
+        font-size: 20px;
+        margin-top: 10px;
+
+    }
+
+    .text {
+        width: 100%;
+        height: 11vh;
+        background-color: rgb(74, 123, 139);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+
+    }
+
+    h3:hover {
+        color: blue;
+    }
+
+
+
+
+    /* kod för sida tre */
+
+    .s_recept {
+        grid-area: st3;
+        background-color: rgb(74, 123, 139);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        font-size: medium;
+        font-weight: 800;
+
+    }
+
+    .lager_s3 {
+        height: 50vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(74, 123, 139);
+
+    }
+
+    .bild_s3 {
+        background-image: url(../img/Gryta_1.jpg);
+        height: 50vh;
+        width: 50vw;
+        background-color: orange;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px 10px 0px 0px
+    }
+
+    .text_s3 {
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        border-radius: 10 10px 10px 0px;
+        flex-direction: column;
+    }
+
+    .listas3 {
+        display: flex;
+        font-weight: bolder;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .recept {
+        width: 90vw;
+        height: 60vh;
+        background-color: rgb(74, 123, 139);
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .ingredienser {
+        width: 30vw;
+        height: 60vh;
+        background-color: lightblue;
+        border-radius: 20px 20px 20px 20px
+    }
+
+    .gör_så {
+        display: flex;
+        width: 60vw;
+        height: 60vh;
+        border-radius: 0px 50px 50px 0px;
+        justify-content: space-around;
+        flex-direction: column;
+
+
+
     }
 }
 
+/* kod sida 3 stop här för mobil */
+
+
+
 .menu {
     height: 100vh;
-    width: 80vw;
-    background: yellowgreen;
+    width: 40vw;
+    background: rgb(74, 123, 139);
     position: fixed;
     top: 0;
     left: -90vw;
@@ -88,6 +336,7 @@ a {
 
 .menu-button i.material-icons {
     font-size: 2.5rem;
+    color: blue;
 }
 
 .show {
@@ -109,11 +358,10 @@ a {
     display: block;
 }
 
-
-
 @media screen and (min-width:768px) {
+    /* kod för desktop */
 
-
+    /* wrapper sida 3 */
     #wrappermain {
         width: 100vw;
         height: 150vh;
@@ -125,6 +373,20 @@ a {
             "st"
             "ft";
     }
+/* wrapper sida 3 */
+    #wrapperrecept {
+        width: 100vw;
+        height: 150vh;
+        display: grid;
+        grid-template-rows: 20fr 5fr 60fr 35fr;
+        grid-template-areas:
+            "hd"
+            "nv"
+            "st3"
+            "ft";
+    }
+
+
 
     header {
         grid-area: hd;
@@ -148,6 +410,16 @@ a {
     footer {
         grid-area: ft;
         background-color: rgb(2, 2, 43);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    footer h2,
+    p {
+        color: white;
     }
 
     .nav2 {
@@ -156,10 +428,11 @@ a {
         display: flex;
         justify-content: space-around;
     }
+
     ul:hover {
-        cursor:pointer;
+        cursor: pointer;
     }
- 
+
 
     .menu-button {
         display: none;
@@ -171,8 +444,9 @@ a {
         border-radius: 10px;
         box-shadow: 3px 3px 3px 3px #333333;
     }
-    .block1:hover{
-        box-shadow: 10px 10px 10px 10px #333333;    
+
+    .block1:hover {
+        box-shadow: 10px 10px 10px 10px #333333;
     }
 
     #bild1 {
@@ -182,19 +456,20 @@ a {
         height: 30vh;
         width: 20vw;
         border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
     }
- 
-   
+
+
 
     .textbild {
         height: 10vh;
         width: 20vw;
         display: flex;
-        align-items:start;
+        align-items: start;
         justify-content: start;
         background-color: white;
         border-radius: 0px 0px 10px 10px;
-       
+
     }
 
     #bild2 {
@@ -205,6 +480,7 @@ a {
         width: 20vw;
         border-radius: 10px 10px 0px 0px;
         position: fill;
+        object-fit: cover;
     }
 
     #bild3 {
@@ -215,6 +491,37 @@ a {
         width: 20vw;
         border-radius: 10px 10px 0px 0px;
         position: fill;
+        object-fit: cover;
+    }
+
+
+    #bild4 {
+        background-image: url(../img/Kycklingfile_med_mos.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        width: 20vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    #bild5 {
+        background-image: url(../img/Ris_med_räckor.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        width: 20vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    #bild6 {
+        background-image: url(../img/Tacos.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        width: 20vw;
+        border-radius: 10px 10px 0px 0px;
     }
 
     .lager {
@@ -243,7 +550,7 @@ a {
     .text h1,
     h3 {
         color: black;
-        text-size: 20px;
+        font: 20px;
         margin-left: 100px;
         margin-top: 10px;
 
@@ -259,4 +566,83 @@ a {
     h3:hover {
         color: blue;
     }
+
+    /* kod för sida tre webb */
+
+    .s_recept {
+        grid-area: st3;
+        background-color: rgb(74, 123, 139);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        font-size: x-large;
+
+    }
+
+    .lager_s3 {
+        height: 50vh;
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(74, 123, 139);
+
+    }
+
+    .bild_s3 {
+        background-image: url(../img/Gryta_1.jpg);
+        height: 50vh;
+        width: 30vw;
+        background-color: orange;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px 0px 0px 50px
+    }
+
+    .text_s3 {
+        height: 50vh;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        border-radius: 0px 50px 50px 0px;
+        flex-direction: column;
+
+    }
+
+    .listas3 {
+        display: flex;
+        font-weight: bolder;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .recept {
+        width: 90vw;
+        height: 60vh;
+        background-color: rgb(74, 123, 139);
+        display: flex;
+    }
+
+    .ingredienser {
+        width: 30vw;
+        height: 60vh;
+        background-color: lightblue;
+        border-radius: 50px 0px 0px 50px
+    }
+
+    .gör_så {
+        display: flex;
+        width: 60vw;
+        height: 60vh;
+        border-radius: 0px 50px 50px 0px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    /* slut på kod för sida 3 webb */
+
 }
