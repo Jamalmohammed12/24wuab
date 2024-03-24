@@ -16,12 +16,13 @@ body {
 ul:hover {
     cursor: pointer;
 }
+li{
+    list-style: none;
+}
 
 a {
     text-decoration: none;
     color: black;
-    scale: 1.07;
-    transition: 0.6s;
 }
 
 
@@ -60,7 +61,7 @@ a {
             "st3"
             "ft";
     }
-/* hej */
+/* Hjälp med chat gpt */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -72,9 +73,7 @@ a {
     flex-direction: column;
   }
   
-  h1 {
-    text-align: center;
-  }
+ 
   
   form {
     margin-top: 20px;
@@ -111,7 +110,7 @@ a {
     background-color: #0056b3;
   }
 
-/* stop hej */
+/* stop  */
 
 
     header {
@@ -140,12 +139,15 @@ a {
 
     nav {
         grid-area: nv;
-        background-color: lightgreen;
+        background-color:  lightblue;
+        fle
     }
 
     footer h2,
     p {
         color: white;
+        padding: 0;    
+        margin: 0px;
     }
 
 
@@ -333,7 +335,7 @@ a {
         justify-content: center;
         align-items: center;
         background-color: lightblue;
-        border-radius: 10 10px 10px 0px;
+        border-radius: 10px 10px 10px 0px;
         flex-direction: column;
     }
 
@@ -460,18 +462,11 @@ a {
         flex-direction: column;
       }
       
-      h1 {
-        text-align: center;
-      }
-      
       form {
         margin-top: 20px;
       }
       
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
+      
       
       input[type="text"],
       input[type="email"],
@@ -511,10 +506,10 @@ a {
         grid-area: ft;
         background-color: rgb(2, 2, 43);
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
-
+        justify-content: space-between;
+      
     }
 
     footer h2,
@@ -581,7 +576,6 @@ a {
         height: 30vh;
         width: 20vw;
         border-radius: 10px 10px 0px 0px;
-        position: fill;
         object-fit: cover;
     }
 
@@ -592,7 +586,6 @@ a {
         height: 30vh;
         width: 20vw;
         border-radius: 10px 10px 0px 0px;
-        position: fill;
         object-fit: cover;
     }
 
@@ -604,7 +597,6 @@ a {
         height: 30vh;
         width: 20vw;
         border-radius: 10px 10px 0px 0px;
-        position: fill;
     }
 
     #bild5 {
@@ -614,7 +606,7 @@ a {
         height: 30vh;
         width: 20vw;
         border-radius: 10px 10px 0px 0px;
-        position: fill;
+       
     }
 
     #bild6 {
@@ -663,6 +655,7 @@ a {
         width: 100%;
         height: 10vh;
         background-color: rgb(74, 123, 139);
+       
     }
 
     h3:hover {
