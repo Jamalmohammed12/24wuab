@@ -20,6 +20,8 @@ ul:hover {
 a {
     text-decoration: none;
     color: black;
+    scale: 1.07;
+    transition: 0.6s;
 }
 
 
@@ -48,8 +50,68 @@ a {
             "st3"
             "ft";
     }
+    #wrapperrkontakta {
+        width: 100vw;
+        height: 150vh;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas:
+            "hd"
+            "st3"
+            "ft";
+    }
+/* hej */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
 
-
+/* stop hej */
 
 
     header {
@@ -90,7 +152,7 @@ a {
     .nav2 {
         display: none;
     }
-
+/* kod för sida 1 */
     .block1 {
         height: 40vh;
         width: 60vw;
@@ -226,7 +288,7 @@ a {
     }
 
 
-
+/* kod sida 1 stop här för mobil */
 
     /* kod för sida tre */
 
@@ -315,7 +377,7 @@ a {
 
 /* kod sida 3 stop här för mobil */
 
-
+/* generel kod */
 
 .menu {
     height: 100vh;
@@ -357,6 +419,7 @@ a {
 .fade-layer.visible {
     display: block;
 }
+/* generel kod stop */
 
 @media screen and (min-width:768px) {
     /* kod för desktop */
@@ -385,8 +448,45 @@ a {
             "st3"
             "ft";
     }
+    .container {
+        width: 50vw;
+        height: 50vh;
+        margin: 50px auto;
+        padding: 20px;
+        background-color:  rgb(74, 123, 139);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      form {
+        margin-top: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      textarea{
+        height: 20vh;
 
-
+      }
 
     header {
         grid-area: hd;
@@ -447,6 +547,8 @@ a {
 
     .block1:hover {
         box-shadow: 10px 10px 10px 10px #333333;
+        scale: 1.07;
+        transition: 0.6s;
     }
 
     #bild1 {

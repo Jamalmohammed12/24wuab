@@ -11,16 +11,15 @@
 </head>
 <body>
   <nav class="menu">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <ul>Recept</ul>
+    <ul>Teman</ul>
+    <ul>veckomeny</ul>
+    <ul><a href="Kontakta_oss.html">Kontakta oss</a></ul>
   </nav>
   <div class="fade-layer"></div>
 
 
-  <div id="wrappermain">
+  <div id="wrapperkontakta">
 
 
 
@@ -38,14 +37,32 @@
     </nav>
     <section>
     
+      
+        <div class="container">
+          <h1>Contact Me</h1>
+          <form id="contact-form" method="post" action="send_email.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+      
+            <button type="submit">Send</button>
+          </form>
+        </div>
+  
+
 
 
 
     </section>
     <footer>  
       <div id="footer1">
-      <h2>Contact Us</h2>
-      <p>example@example.com</p>
+      <a href="Kontakta_oss.html"><h2>Contact Us</h2></a>
+      <p>Jamal.mohammed@elev.ga.ntig.se</p>
       <p>123-456-7890</p>
       <p> 123 Street, City, Country</p>
   </div>
