@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Shadows+Into+Light&display=swap');
+
+
+
 body {
     margin: 0px;
     overflow-x: hidden;
-
+    font-family: 'Domine';
 }
 
 .img_logga {
-    height: 80px;
+    height: 150px;
     margin-right: 20px;
+}
+ul:hover {
+    cursor:pointer;
 }
 
 a {
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width:768px) {
@@ -109,7 +116,7 @@ color: black;
 
     #wrappermain {
         width: 100vw;
-        height: 120vh;
+        height: 150vh;
         display: grid;
         grid-template-rows: 20fr 5fr 60fr 35fr;
         grid-template-areas:
@@ -122,29 +129,37 @@ color: black;
     header {
         grid-area: hd;
         display: flex;
-        justify-content: left;
-        background-color: darkorange;
+        justify-content: center;
+        background-color: black;
 
     }
 
     section {
         grid-area: st;
-        background-color: black;
+        background-color: rgb(74, 123, 139);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-direction: column;
+        gap: 3px;
     }
 
 
     footer {
         grid-area: ft;
-        background-color: chartreuse;
+        background-color: rgb(2, 2, 43);
     }
 
     .nav2 {
         grid-area: nv;
-        background-color: lightgreen;
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-around;
     }
+    ul:hover {
+        cursor:pointer;
+    }
+ 
 
     .menu-button {
         display: none;
@@ -153,28 +168,95 @@ color: black;
     .block1 {
         height: 40vh;
         width: 20vw;
-        background-color: green;
         border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px #333333;
+    }
+    .block1:hover{
+        box-shadow: 10px 10px 10px 10px #333333;    
     }
 
     #bild1 {
-    background-image: url(../img/Logga\ för\ hemsidan.png); 
-    background-size: cover;
-    background-position: center;
-    height: 30vh;
-    width: 20vw;
-    border-radius: 10px 10px 0px 0px ;
+        background-image: url(../img/Gryta_1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        width: 20vw;
+        border-radius: 10px 10px 0px 0px;
     }
+ 
+   
 
     .textbild {
-    height: 10vh;
-    width: 20vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: white;
-    border-radius: 0px 0px 10px 10px;
+        height: 10vh;
+        width: 20vw;
+        display: flex;
+        align-items:start;
+        justify-content: start;
+        background-color: white;
+        border-radius: 0px 0px 10px 10px;
+       
     }
-    
 
+    #bild2 {
+        background-image: url(../img/Pasta_carbonara.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 30vh;
+        width: 20vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    #bild3 {
+        background-image: url(../img/Kyckling_sallad.jpg);
+        background-size: cover;
+        background-position: left 60%;
+        height: 30vh;
+        width: 20vw;
+        border-radius: 10px 10px 0px 0px;
+        position: fill;
+    }
+
+    .lager {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(74, 123, 139);
+
+    }
+
+    .lager2 {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(74, 123, 139);
+    }
+
+    .text h1,
+    h3 {
+        color: black;
+        text-size: 20px;
+        margin-left: 100px;
+        margin-top: 10px;
+
+
+    }
+
+    .text {
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(74, 123, 139);
+    }
+
+    h3:hover {
+        color: blue;
+    }
 }
